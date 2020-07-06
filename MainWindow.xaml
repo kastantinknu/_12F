@@ -3,16 +3,15 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:WpfApp14"
        xmlns:local1="clr-namespace:WpfApp14.ViewModels"
 
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="379" Width="344">
     <Window.DataContext>
         <local1:ViewModel1/>
     </Window.DataContext>
-    <Grid >
-        <Canvas   Width="300" Height="300" Background="#FFABFF85">
+    <Grid Height="315" VerticalAlignment="Top" Margin="0,0,482,0" >
+        <Canvas   Width="300" Height="300" Background="#FFABFF85" Margin="10,10,490,124">
 
             <Polygon Focusable="True"   Name="hexagon" Stroke="Blue" Fill="Gold" StrokeThickness="2" Points="{Binding Points_of_polygon}" Height="300" Width="300">
                 <Polygon.BitmapEffect>
@@ -83,6 +82,8 @@
                      Fill="DarkRed" 
                      Points="136, 86, 154, 86, 154, 214, 136,214" >
             </Polygon>
+            <Label Content="Управління клавішею Tab та стрілками" Margin="14,-880,0,0" Height="25" Width="248" Canvas.Top="756"/>
+
         </Canvas>
     </Grid>
 </Window>
